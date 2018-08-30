@@ -1,3 +1,3 @@
-const sayHello = name => `Hey, ${name}!`;
+const sayHello = name => `Hi, ${name}!`;
 
 export default sayHello;

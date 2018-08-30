@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "rm -rf node_modules/core && mkdir node_modules/core && cp -R ../core/lib/* node_modules/core/ && cp -R ../core/node_modules node_modules/core/ && cp ../core/package.json node_modules/core/",
+    "prestart": "rm -rf node_modules/core && cp -R ../core/lib/ node_modules/core",
     "start": "node src/index.js",
     "watch": "nodemon --watch src --watch ../core/lib --exec \"npm start\""
   },

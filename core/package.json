@@ -1,10 +1,11 @@
 {
-  "name": "barfoo",
+  "name": "core",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "babel src -d lib --watch"
+    "build": "rm -rf lib && babel src -d lib && cp -R node_modules lib && cp package.json lib",
+    "watch": "npm run build && babel src -d lib --watch"
   },
   "author": "",
   "license": "ISC",
